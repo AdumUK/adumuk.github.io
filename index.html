@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title>Adam Davies - Web Developer</title>
+    <meta name="title" content="Adam Davies - Web Developer">
+    <meta name="description" content="South Wales Full Stack Developer - Adam Davies">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.adum.uk/v2/">
+    <meta property="og:title" content="Adam Davies - Web Developer">
+    <meta property="og:description" content="South Wales Full Stack Developer - Adam Davies">
+    <meta property="og:image" content="https://www.adum.uk/images/social.PNG">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.adum.uk/v2/">
+    <meta property="twitter:title" content="Adam Davies - Web Developer">
+    <meta property="twitter:description" content="South Wales Full Stack Developer - Adam Davies">
+    <meta property="twitter:image" content="https://www.adum.uk/images/social.PNG">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css?v=08072019">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136491622-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136491622-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.5/es6-shim.min.js"></script>
+  </head>
+  <body>
+        <!-- NAVIGATION -->
+        <nav class="navbar is-fixed-top is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <span class="brand-icon">
+                        <<i class="fas fa-layer-group"></i>/>
+                    </span>
+                    <span class="text">
+                        <span class="top is-size-5 has-text-weight-semibold">
+                            Adam Davies
+                        </span>
+                        <span class="bottom is-size-7">
+                            Full Stack Web Developer
+                        </span>
+                    </span>
+                </a>
+                <div class="navbar-burger burger" data-target="siteNavigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="siteNavigation" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#main">
+                        <span class="icon">
+                            <i class="fas fa-info"></i>
+                        </span>
+                        <span>About</span>
+                    </a>
+                    <a class="navbar-item" href="#showcase">
+                        <span class="icon">
+                            <i class="fas fa-book-open"></i>
+                        </span>
+                        <span>Showcase</span>
+                    </a>
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button linked-in" target="_blank" href="https://www.linkedin.com/in/adumuk/">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </span>
+                                    <span>
+                                        LinkedIn
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-fullheight" id="main">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns root is-desktop mb-10">
+                        <div class="column is-two-thirds-desktop">
+                            <div class="columns is-multiline">
+                                <div class="column is-full">
+                                    <article class="media self-item is-vcentered">
+                                        <figure class="media-left">
+                                            <p class="image">
+                                                <img src="images/adam.png">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content is-clipped">
+                                            <div class="content">
+                                                <h1 class="is-marginless">Adam Davies</h1>
+                                                <h4 class="is-marginless">Web Developer</h4>
+                                                <h6 class="is-marginless location"><img class="flag" src="images/svg/wales.svg" alt="Wales" /> <span>Bridgend, South Wales</span></h6>
+                                            </div>
+                                            <nav class="level is-mobile">
+                                                <div class="level-left">
+                                                    <div class="level-item">
+                                                        <span class="icon is-medium">
+                                                            <svg><use xlink:href="images/svg/_collection.svg#csharp"></use></svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="level-item">
+                                                        <span class="icon is-medium">
+                                                            <svg><use xlink:href="images/svg/_collection.svg#aspnet"></use></svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="level-item" ToolTip=>
+                                                        <span class="icon is-medium">
+                                                            <i class="fas fa-database"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="level-item">
+                                                        <span class="icon is-medium">
+                                                            <svg viewBox="0 0 128 128">
+                                                                <path fill="#E44D26" d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z"></path><path fill="#EBEBEB" d="M64 52.455h-18.212l-1.258-14.094h19.47v-13.762h-34.511l.33 3.692 3.382 37.927h30.799zM64 88.198l-.061.017-15.327-4.14-.979-10.975h-13.817l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="level-item">
+                                                        <span class="icon is-medium">
+                                                            <svg viewBox="0 0 128 128">
+                                                                <path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="level-item">
+                                                        <span class="icon is-medium">
+                                                                <svg viewBox="0 0 128 128">
+                                                                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185h-125.184z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zm-46.885-37.793h-11.709l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                                                                </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title">
+                                                Profile
+                                            </p>
+                                        </header>
+                                        <div class="card-content quote">
+                                            <div class="content is-size-6">
+                                                <p>
+                                                    Agile developer that has been working in the commercial field for 4 years, university graduate with a 2:1 degree in BSc Web Development.
+                                                </p>
+                                                <p>
+                                                    Experienced in developing bespoke web/software applications, with an eye for detail and flexiblity between projects.
+                                                </p>
+                                                <p>
+                                                    <strong>Motivated problem solver,</strong> proactively seeking out and implementing solutions to issues. Passionate about web security and ensuring quality production safe code.
+                                                </p>
+                                                <p>Also a big fan of craft beer 🍺</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title">
+                                                Experience
+                                            </p>
+                                        </header>
+                                        <div class="card-content quote">
+                                            <div class="content">
+                                                <p class="mb-0">
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Full Stack Web Developer</span> <span>Comgem</span>
+                                                </p>
+                                                <p>
+                                                    <span class="mr-25 has-text-weight-bold">May 2018 - Present</span> <span>Bridgend, South Wales</span>
+                                                </p>
+                                                <p class="mb-0">
+                                                    .NET Stack (C#, MVC, Web API, MSSQL, HTML, CSS, JavaScript, Unit Testing, WebForms)
+                                                </p>
+                                                <p> 
+                                                   Full Stack Developer of in-house eCommerce platform. This requires scoping up of new features, planning the roadmap for the software and leading team based decisions on technologies/frameworks that we would like to use.
+                                                </p>
+                                            </div>
+                                            <div class="content">
+                                                <p class="mb-0">
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Web Developer</span> <span>Comgem</span>
+                                                </p>
+                                                <p>
+                                                    <span class="mr-25 has-text-weight-bold">Aug 2015 - May 2018</span> <span>Bridgend, South Wales</span>
+                                                </p>
+                                                <p class="mb-0"> 
+                                                    Developing or extending application features and incorporating bespoke designs into Comgems .NET Front-End E-Commerce platform (C#, WebForms, CSS, JS). 
+                                                </p>
+                                                <p>
+                                                    Other tasks involved automation of tasks, data migration and SEO.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title">
+                                                Education
+                                            </p>
+                                        </header>
+                                        <div class="card-content quote">
+                                            <div class="content">
+                                                <p class="mb-0">
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">BSc Web Development</span> <span class="is-size-6 has-text-weight-bold">2.1</span>
+                                                </p>
+                                                <p class="mb-0">
+                                                    <span class="mr-25 has-text-weight-bold">2012 - 2015</span> <span>Swansea, South Wales</span>
+                                                </p>
+                                                <p>
+                                                    University of Wales Trinity Saint David
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column right pl-25">
+                            <div class="columns is-multiline">
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title pt-0">
+                                                Contact
+                                            </p>
+                                        </header>
+                                        <div class="card-content is-paddingless">
+                                            <div class="content">
+                                                <ul class="is-marginless is-bulletless">
+                                                    <li id="email" class="bot-detection">
+                                                        <img alt="Loading" src="images/loading.gif" />
+                                                    </li>
+                                                    <li><a href="https://www.linkedin.com/in/adumuk" target="_blank">linkedin.com/in/adumuk</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title pt-0">
+                                                Daily Tech Stack
+                                            </p>
+                                        </header>
+                                        <div class="card-content is-paddingless">
+                                            <div class="content">
+                                                <ul class="mt-0  has-text-weight-bold">
+                                                    <li>C#</li>
+                                                    <li>ASP.NET Framework</li>
+                                                    <li>ASP.NET Web API</li>
+                                                    <li>Entity Framework</li>
+                                                    <li>SQL - MSSQL</li>
+                                                    <li>HTML</li>
+                                                    <li>JavaScript</li>
+                                                    <li>CSS (Sass)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-full">
+                                    <div class="card">
+                                        <header class="card-header">
+                                            <p class="card-header-title pt-0">
+                                                Experience With
+                                            </p>
+                                        </header>
+                                        <div class="card-content is-paddingless">
+                                            <div class="content">
+                                                <ul class="mt-0  has-text-weight-bold">
+                                                    <li>Git</li>
+                                                    <li>Azure</li>
+                                                    <li>Azure DevOps</li>
+                                                    <li>Responsive/Adaptive Web Design</li>
+                                                    <li>Atlassian (Jira, Confluence)</li>
+                                                    <li>SVN</li>
+                                                    <li>WCF</li>
+                                                    <li>Selenium</li>
+                                                    <li>BrowserStack</li>
+                                                    <li>Apache Solr</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>jQuery</li>
+                                                    <li>Adobe Creative Suite</li>
+                                                    <li>VB.NET</li>
+                                                    <li>MySQL</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero is-light is-fullheight" id="showcase">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="section-heading">
+                        <h3 class="title is-2">Showcase</h3>
+                        <h4 class="subtitle">Publicly accessible projects, private projects are available for discussion.</h4>
+                    </div>
+
+                    <hr class="mt-5"/>
+
+                    <div class="columns is-multiline">
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>PHS BeSafe</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2019</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/besafe.jpg')">
+                                </div>
+                                <div class="card-content stack">
+                                    <i class="devicon-csharp-plain"></i>
+                                    <i class="devicon-dot-net-plain-wordmark"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="https://www.phsbesafe.co.uk" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>Beards Jewellers</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2019</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/beards.jpg')">
+                                </div>
+                                <div class="card-content stack smaller">
+                                    <i class="devicon-csharp-plain"></i>
+                                    <i class="devicon-dot-net-plain-wordmark"></i>
+                                    <i class="fas fa-database"></i>
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="https://www.beards.co.uk" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>PHS Wastekit</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2018</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/wastekit.jpg')">
+                                </div>
+                                <div class="card-content stack">
+                                    <i class="devicon-csharp-plain"></i>
+                                    <i class="devicon-dot-net-plain-wordmark"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="https://www.phswastekit.co.uk" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>Interfix</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2018</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/interfix.jpg')">
+                                </div>
+                                <div class="card-content stack">
+                                    <i class="devicon-csharp-plain"></i>
+                                    <i class="devicon-dot-net-plain-wordmark"></i>
+                                    <i class="fas fa-database"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="https://orderpad.interfix.co.uk/" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>Legal Compliance Manager</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2018</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/legalcompliance.jpg');">
+                                    <div class="read-more">
+                                        <span class="text">More Information</span> <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content more-info hidden">
+                                    <div class="content">
+                                        <p>Redesign and technical overhaul of the Legal Compliance Manager website, owned by Wales Green Business.</p>
+
+                                        <p>Initial project created using ASP.NET Website with Web Forms, VB.Net, Bootstrap & CSS. No ability for the client to edit the contents of the site and the site was not mobile compatible.</p>
+                                            
+                                        <p>Completing the project involved:</p>
+                                            
+                                        <ul>
+                                            <li>Converting a large majority of the code base from VB.Net to C#</li>
+                                            <li>Incorporating ASP.NET's MVC to allow for dynamic pages controlled through an in-house Content Management System</li>
+                                            <li>Implementing client approved designs, partially moved legacy styling into Sass and built the new design logic on top as some aspects of the site remained the same e.g. admin controlled areas.</li>
+                                            <li>Business logic changed from single product purchase to multiple types of subscriptions, required migration of legacy clients to new subscription system along with tools to enable staff to manage/create subscriptions.</li>
+                                            <li>Stripe payment processor incorporated into the site and updates to existing PayPal IPN</li>
+                                            <li>Fully incorporating Bootstrap 3 to assist with making the site mobile compatible, along with custom responsive designs.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content stack smaller">
+                                    <i class="devicon-csharp-plain"></i>
+                                    <i class="devicon-dot-net-plain-wordmark"></i>
+                                    <i class="fas fa-database"></i>
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="https://www.legalcompliancemanager.org" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>Cardiff Embroidery</span>
+                                        <span class="tags">
+                                            <span class="tag is-success">Commercial</span>
+                                            <span class="tag is-default">2019</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/cardiffembroidery.jpg')">
+                                </div>
+                                <div class="card-content stack smaller">
+                                        <i class="devicon-csharp-plain"></i>
+                                        <i class="devicon-dot-net-plain-wordmark"></i>
+                                        <i class="fas fa-database"></i>
+                                        <i class="devicon-javascript-plain"></i>
+                                        <i class="devicon-sass-original colored"></i>
+                                    </div>
+                                <footer class="card-footer">
+                                    <a href="https://www.cardiffembroidery.co.uk/" target="_blank" class="card-footer-item">View Site</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
+                            <div class="card project">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>Reddit User Flair Tracker</span>
+                                        <span class="tags">
+                                            <span class="tag is-info">Personal</span>
+                                            <span class="tag is-default">2018</span>
+                                        </span>
+                                    </p>
+                                </header>
+                                <div class="card-image" style="background-image: url('images/projects/flair-tracker.PNG')">
+                                    <div class="read-more">
+                                        <span class="text">More Information</span> <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content more-info hidden">
+                                    <p>
+                                        A python bot that uses a reddit API wrapper called praw to scan new posts and comments within various communities, it matches on the users CSS "flair" tag and then stores the comment within a sqlite database.
+                                    </p>
+                                    <p>
+                                        This is currently being utilised within gaming communities to track developer comments for the games they play, one example being that when the bot finds a matched post/comment it will then notify users within a predefined channel in a Discord server.
+                                    </p>
+                                    <p>
+                                        This project currently has an outreach of over 5000 users.
+                                    </p>
+                                </div>
+                                <div class="card-content stack">
+                                    <i class="devicon-python-plain-wordmark colored"></i>
+                                    <i class="fab fa-discord"></i>
+                                    <i class="fab fa-reddit"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content">
+                <p class="disclaimer">
+                    General Data Protection Regulation (GDPR) requires formal consent for representation of my information, <br/> please do not redistribute this site (adum.uk) or CV for the purpose of representation unless written consent has been given.
+                </p>
+
+                <ul>
+                    <li>Made using</li>
+                    <li>
+                        <a href="https://bulma.io/" target="_blank">
+                            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fontawesome.com/" target="_blank">
+                            <i class="fab fa-font-awesome-logo-full"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://konpa.github.io/devicon/" target="_blank">
+                            <i class="devicon-devicon-plain-wordmark"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="disclaimer smaller">
+                    Icons made by <a href="https://www.freepik.com/" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                </p>
+            </div>
+        </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="js/main.js?v=08072019"></script>
+</html>
