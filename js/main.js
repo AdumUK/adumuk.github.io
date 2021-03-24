@@ -39,34 +39,4 @@
         $("#" + target, closestNavbar).toggleClass('is-active');
     });
 
-    let $readmore = $(".read-more");
-
-    $readmore.click(function(){
-        let $el = $(this);
-        let $panel = $(".more-info", $el.closest(".card"));
-        let isPanelHidden = panel.hasClass("hidden")
-
-        if($panel.length)
-        {
-            if(isPanelHidden === true)
-            {
-                $panel.slideDown(function(){
-                    $(this).removeClass("hidden");
-                });
-
-                $("span.text", this).text("Less Information");
-                $("svg", this).addClass("rotate");
-            } 
-            else 
-            {
-                $panel.slideUp(function(){
-                    $(this).addClass("hidden");
-                });
-
-                $("span.text", this).text("More Information");
-                $("svg", this).removeClass("rotate");
-            }
-        }
-    });
-
 })(jQuery, window);
