@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
-
-
 body {
     background: #ebedee;
     font-family: 'Karla', sans-serif;
@@ -105,7 +102,7 @@ a {
 
 .self-item {
     .image img {
-        max-width: 128px;
+        max-width: 148px;  
     }
 
     .location {
@@ -184,20 +181,10 @@ hr {
 }
 
 .card.project {
-    .card-image {
-        height: 200px;
+    .card-image { 
+        height: 340px;
         position: relative;
         background-position: 0 -1px;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(86, 86, 86, 0.12);
-        }
     }
 
     .card-header {
@@ -206,6 +193,22 @@ hr {
 
     .card-content {
         padding: 10px 15px;
+        
+        z-index: 2;
+        
+        
+        &.more-info {
+            background: rgba(0,0,0,0.7);
+            height: 100%;
+            text-shadow: 1px 1px 1px #000;
+            color: white;
+            display : flex;
+            align-items : center;
+
+            ul {
+                vertical-align: middle;
+            }
+        }
 
         &.stack {
             text-align: center;
@@ -343,6 +346,26 @@ a.linked-in {
     }
 }
 
+a.github {
+    background: #333;
+    border-color: #333;
+
+    .icon, & {
+        color: #fafafa;
+    }
+
+    &:hover, &:focus, &:active {
+        .icon, & {
+            color: #dadada;
+        }
+    }
+}
+
+a.print {
+    color: #a1a1a1;
+    border-color: #a1a1a1;
+}
+
 .button  {
     span {
         &:last-child {
@@ -403,6 +426,33 @@ a.linked-in {
         svg {
             color: #0077B5;
         }
+    }
+}
+
+.speech-bubble {
+    background: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -45px;
+    opacity: 0.75;
+
+    &:hover, &:focus, &:active {
+        opacity: 1;
+        cursor: progress;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom:-10px;
+        left: 10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent #ffffff transparent transparent;
     }
 }
 

@@ -3,34 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Primary Meta Tags -->
     <title>Adam Davies - Web Developer</title>
     <meta name="title" content="Adam Davies - Web Developer">
-    <meta name="description" content="South Wales Full Stack Developer - Adam Davies">
+    <meta name="description" content="South Wales Web Developer - Adam Davies">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.adum.uk/v2/">
+    <meta property="og:url" content="https://adum.uk/">
     <meta property="og:title" content="Adam Davies - Web Developer">
-    <meta property="og:description" content="South Wales Full Stack Developer - Adam Davies">
-    <meta property="og:image" content="https://www.adum.uk/images/social.PNG">
+    <meta property="og:description" content="South Wales Web Developer - Adam Davies">
+    <meta property="og:image" content="https://adum.uk/images/social_2021.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.adum.uk/v2/">
+    <meta property="twitter:url" content="https://adum.uk/">
     <meta property="twitter:title" content="Adam Davies - Web Developer">
-    <meta property="twitter:description" content="South Wales Full Stack Developer - Adam Davies">
-    <meta property="twitter:image" content="https://www.adum.uk/images/social.PNG">
+    <meta property="twitter:description" content="South Wales Web Developer - Adam Davies">
+    <meta property="twitter:image" content="https://adum.uk/images/social_2021.png">
 
+    <!-- Bulma -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css?v=08072019">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="css/style.min.css?v=24032021">
+
+    <!-- FontAwesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136491622-1"></script>
     <script>
@@ -40,10 +51,25 @@
 
         gtag('config', 'UA-136491622-1');
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.5/es6-shim.min.js"></script>
   </head>
   <body>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+            <defs>
+                <symbol viewBox="0 0 128 128" id="csharp">
+                    <path fill="#9B4F96" d="M115.4 30.7l-48.3-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path>
+                    <path fill="#68217A" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4v-55.7c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path>
+                    <path fill="#fff" d="M85.3 76.1c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1l1.2-6.2h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7h3.3zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z"></path>
+                </symbol>
+                <symbol viewBox="0 0 128 128" id="aspnet">
+                    <path fill="#1384C8" d="M40.335 78.188h-1.685v-9.65c0-.762.05-1.69.14-2.785h-.038c-.158.64-.303 1.104-.43 1.391l-4.902 11.044h-.821l-4.911-10.964c-.138-.306-.283-.799-.43-1.471h-.036c.052.576.081 1.509.081 2.804v9.631h-1.626v-14.371h2.225l4.409 10.021c.332.754.547 1.328.651 1.72h.069c.288-.785.517-1.375.688-1.762l4.505-9.979h2.11v14.371h.001zM45.523 78.188h-1.639v-10.263h1.639v10.263zm.283-13.942c0 .303-.106.555-.317.763-.207.208-.464.312-.764.312-.293 0-.548-.101-.757-.301-.209-.201-.313-.458-.313-.774 0-.296.104-.549.313-.754s.464-.305.757-.305c.3 0 .557.099.764.305.211.205.317.458.317.754"></path>
+                    <path fill="#1384C8" d="M55.764 77.713c-.786.483-1.726.722-2.812.722-1.472 0-2.655-.488-3.561-1.464-.879-.947-1.321-2.169-1.321-3.667 0-1.681.48-3.042 1.45-4.077.964-1.036 2.261-1.553 3.892-1.553.892 0 1.683.174 2.375.521v1.687c-.766-.538-1.576-.805-2.445-.805-1.045 0-1.896.365-2.555 1.093-.687.745-1.034 1.742-1.034 2.985 0 1.194.317 2.14.948 2.837.633.694 1.476 1.042 2.538 1.042.897 0 1.738-.295 2.524-.882v1.561h.001zM63.604 69.59c-.289-.223-.706-.331-1.255-.331-.668 0-1.229.298-1.683.901-.516.673-.771 1.604-.771 2.795v5.232h-1.644v-10.262h1.644v2.116h.039c.241-.749.614-1.325 1.112-1.733.466-.373.992-.561 1.572-.561.438 0 .762.047.984.14l.002 1.703zM72.758 73.075c0-1.313-.296-2.317-.89-3.006-.575-.662-1.38-.992-2.416-.992-1.021 0-1.841.334-2.453 1.003-.647.715-.971 1.725-.971 3.035 0 1.228.308 2.192.93 2.879.618.692 1.45 1.039 2.494 1.039 1.08 0 1.907-.352 2.474-1.051.555-.684.832-1.652.832-2.907m1.685-.057c0 1.635-.462 2.949-1.382 3.934-.924.989-2.167 1.483-3.73 1.483-1.54 0-2.767-.494-3.665-1.483-.881-.953-1.323-2.211-1.323-3.776 0-1.786.5-3.162 1.503-4.139.929-.906 2.17-1.363 3.726-1.363 1.53 0 2.726.477 3.587 1.422.853.95 1.284 2.258 1.284 3.922M82.589 75.442c0 .84-.313 1.536-.942 2.091-.687.601-1.63.901-2.816.901-.971 0-1.822-.203-2.545-.618v-1.766c.804.654 1.692.983 2.667.983 1.301 0 1.952-.479 1.952-1.434 0-.401-.143-.734-.431-.991-.289-.262-.851-.576-1.685-.943-.859-.376-1.472-.762-1.833-1.163-.434-.476-.652-1.093-.652-1.854 0-.852.341-1.561 1.014-2.125.675-.567 1.542-.85 2.606-.85.815 0 1.546.159 2.194.481v1.654c-.677-.488-1.451-.732-2.329-.732-.544 0-.981.136-1.307.399-.329.27-.494.614-.494 1.034 0 .455.138.808.412 1.061.244.233.761.519 1.541.852.876.367 1.509.748 1.895 1.137.5.494.753 1.121.753 1.883M92.629 73.075c0-1.313-.297-2.317-.892-3.006-.575-.662-1.381-.992-2.415-.992-1.021 0-1.841.334-2.456 1.003-.646.715-.969 1.725-.969 3.035 0 1.228.309 2.192.924 2.879.626.692 1.459 1.039 2.501 1.039 1.082 0 1.906-.352 2.474-1.051.555-.684.833-1.652.833-2.907m1.688-.057c0 1.635-.466 2.949-1.388 3.934-.92.989-2.163 1.483-3.727 1.483-1.542 0-2.768-.494-3.667-1.483-.881-.953-1.323-2.211-1.323-3.776 0-1.786.504-3.162 1.502-4.139.928-.906 2.171-1.363 3.728-1.363 1.531 0 2.725.477 3.584 1.422.855.95 1.291 2.258 1.291 3.922"></path>
+                    <path fill="#1384C8" d="M101.555 64.438c-.323-.179-.682-.27-1.091-.27-1.15 0-1.721.724-1.721 2.175v1.582h2.405v1.392h-2.405v8.871h-1.645v-8.871h-1.745v-1.392h1.745v-1.664c0-1.129.346-2.016 1.05-2.654.603-.555 1.34-.831 2.217-.831.508 0 .902.061 1.189.178v1.484zM108.039 78.085c-.388.222-.904.333-1.543.333-1.791 0-2.687-1.01-2.687-3.029v-6.07h-1.761v-1.394h1.761v-2.504l1.646-.533v3.037h2.583v1.394h-2.583v5.791c0 .688.112 1.18.348 1.465.237.295.625.439 1.173.439.409 0 .763-.109 1.063-.331v1.402zM19.237 118.242c0 .805-.286 1.5-.867 2.087-.577.585-1.278.88-2.102.88-.805 0-1.489-.295-2.05-.88-.562-.587-.841-1.283-.841-2.087 0-.827.279-1.525.841-2.103.561-.58 1.245-.867 2.05-.867.823 0 1.524.292 2.102.878.581.588.867 1.286.867 2.092"></path>
+                    <path fill="#1384C8" d="M56.018 120.606h-5.358l-19.448-30.034c-.454-.723-.847-1.508-1.179-2.365h-.16c.139.804.209 2.531.209 5.175v27.224h-4.416v-37.68h5.732l18.865 29.56c.751 1.173 1.265 2.013 1.525 2.519h.104c-.175-1.083-.266-2.932-.266-5.54v-26.539h4.39v37.68h.002zM84.332 120.606h-19.971v-37.68h19.104v3.993h-14.69v12.534h13.612v3.995h-13.613v13.164h15.558v3.994zM114.623 86.919h-10.854v33.688h-4.415v-33.688h-10.875v-3.995h26.144v3.995z"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#1384C8" d="M82.108 46.33c.479-1.232 1.022-2.445 1.427-3.701 2.288-7.097 4.554-14.2 6.805-21.309.865-2.731 1.813-5.42 3.515-7.767 2.692-3.709 6.442-5.652 10.88-6.331 1.741-.266 3.518-.389 5.28-.406 5.267-.05 10.536-.015 15.804-.01.28 0 .56.029.957.052-.129.304-.199.525-.311.724-1.955 3.494-3.872 7.009-5.885 10.468-3.505 6.022-7.016 12.042-10.631 17.998-2.319 3.819-4.834 7.52-7.687 10.974-2.105 2.548-4.321 4.984-7.146 6.77-1.925 1.217-3.981 1.929-6.315 1.917-8.278-.045-16.556-.012-24.834-.024-2.461-.004-4.568-.941-6.356-2.603-2.563-2.381-4.093-5.412-5.345-8.608-2.284-5.835-3.563-11.951-5.031-18.014-.688-2.838-1.47-5.654-2.215-8.478-.048-.183-.142-.354-.25-.617l-.577.542c-3.228 3.207-6.071 6.741-8.615 10.498-.693 1.024-.926 2.374-1.313 3.591-1.424 4.47-2.722 8.983-4.264 13.411-1.477 4.242-4.125 7.616-8.264 9.61-2.42 1.165-5.004 1.795-7.689 1.855-3.98.088-7.962.098-11.943.134-.952.009-.996-.069-.748-.99 1.707-6.338 3.87-12.514 6.58-18.492 2.794-6.167 6.085-12.048 10.231-17.419 2.823-3.657 5.941-7.031 9.843-9.582 1.979-1.293 4.083-2.315 6.477-2.584.394-.045.793-.073 1.189-.073 8.478-.004 16.956.082 25.433-.039 4.547-.065 7.839 1.855 10.304 5.515 1.533 2.276 2.63 4.761 3.553 7.328 1.861 5.178 3.018 10.547 4.325 15.878.748 3.051 1.581 6.081 2.379 9.12.06.228.157.446.238.668l.199-.006z"></path>
+                </symbol>
+            </defs>
+        </svg>
+      
         <!-- NAVIGATION -->
         <nav class="navbar is-fixed-top is-transparent">
             <div class="navbar-brand">
@@ -55,8 +81,8 @@
                         <span class="top is-size-5 has-text-weight-semibold">
                             Adam Davies
                         </span>
-                        <span class="bottom is-size-7">
-                            Full Stack Web Developer
+                        <span class="bottom is-size-8">
+                            Web Developer
                         </span>
                     </span>
                 </a>
@@ -82,6 +108,16 @@
                     </a>
                     <div class="navbar-item">
                         <div class="field is-grouped">
+                            <p class="control hidden">
+                                <a class="bd-tw-button button github" target="_blank" href="https://github.com/AdumUK/">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>
+                                        Github
+                                    </span>
+                                </a>
+                            </p>
                             <p class="control">
                                 <a class="bd-tw-button button linked-in" target="_blank" href="https://www.linkedin.com/in/adumuk/">
                                     <span class="icon">
@@ -89,6 +125,16 @@
                                     </span>
                                     <span>
                                         LinkedIn
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control hidden">
+                                <a class="bd-tw-button button print" onclick="window.print();">
+                                    <span class="icon">
+                                        <i class="fas fa-print"></i>
+                                    </span>
+                                    <span>
+                                        Print
                                     </span>
                                 </a>
                             </p>
@@ -108,7 +154,7 @@
                                     <article class="media self-item is-vcentered">
                                         <figure class="media-left">
                                             <p class="image">
-                                                <img src="images/adam.png">
+                                                <img class="is-rounded" src="images/adam_new.png" alt="Adam Davies Profile Picture">
                                             </p>
                                         </figure>
                                         <div class="media-content is-clipped">
@@ -121,12 +167,16 @@
                                                 <div class="level-left">
                                                     <div class="level-item">
                                                         <span class="icon is-medium">
-                                                            <svg><use xlink:href="images/svg/_collection.svg#csharp"></use></svg>
+                                                            <svg>
+                                                                <use xlink:href="#csharp" href="#csharp"></use>
+                                                            </svg>
                                                         </span>
                                                     </div>
                                                     <div class="level-item">
                                                         <span class="icon is-medium">
-                                                            <svg><use xlink:href="images/svg/_collection.svg#aspnet"></use></svg>
+                                                            <svg>
+                                                                <use xlink:href="#aspnet" href="#aspnet"></use>
+                                                            </svg>
                                                         </span>
                                                     </div>
                                                     <div class="level-item" ToolTip=>
@@ -170,15 +220,14 @@
                                         <div class="card-content quote">
                                             <div class="content is-size-6">
                                                 <p>
-                                                    Agile developer that has been working in the commercial field for 4 years, university graduate with a 2:1 degree in BSc Web Development.
+                                                    Agile developer that has been working in the commercial field for &thickapprox;6 years, university graduate with a 2:1 degree in BSc Web Development.
                                                 </p>
                                                 <p>
-                                                    Experienced in developing bespoke web/software applications, with an eye for detail and flexiblity between projects.
+                                                    Experienced in developing bespoke commercial web/software applications, with a fine eye for detail and willingness of flexibility between projects.
                                                 </p>
                                                 <p>
-                                                    <strong>Motivated problem solver,</strong> proactively seeking out and implementing solutions to issues. Passionate about web security and ensuring quality production safe code.
+                                                    Enthusiastic about cyber security, whether it be keeping up with emerging threats, offensive testing of code, educating others or just general tinkering - I try to keep myself up to date with the latest to help my personal and professional life.
                                                 </p>
-                                                <p>Also a big fan of craft beer 🍺</p>
                                             </div>
                                         </div>
                                     </div>
@@ -193,30 +242,27 @@
                                         <div class="card-content quote">
                                             <div class="content">
                                                 <p class="mb-0">
-                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Full Stack Web Developer</span> <span>Comgem</span>
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Web Developer</span> <span>Comgem Limited</span>
                                                 </p>
                                                 <p>
-                                                    <span class="mr-25 has-text-weight-bold">May 2018 - Present</span> <span>Bridgend, South Wales</span>
-                                                </p>
-                                                <p class="mb-0">
-                                                    .NET Stack (C#, MVC, Web API, MSSQL, HTML, CSS, JavaScript, Unit Testing, WebForms)
+                                                    <span class="mr-25 has-text-weight-bold">Aug 2015 - Present</span> <span>Bridgend, South Wales</span>
                                                 </p>
                                                 <p> 
-                                                   Full Stack Developer of in-house eCommerce platform. This requires scoping up of new features, planning the roadmap for the software and leading team based decisions on technologies/frameworks that we would like to use.
+                                                    Full stack .NET developer for the companies in-house eCommerce platform. The role requires scoping up of new features and planning the platforms roadmap, data migration and implementation, risk evaluating and design implementation. 
+                                                </p>
+                                                <p>
+                                                    Played a key role in migrating the companies platform into a multi-tenanted product which enabled rapid upscaling of user onboarding and created automated pipelines in Azure DevOps allowing developers and tester to ship work seamlessly between environments.
+                                                </p>
+                                                <p>
+                                                    High level stack for role: C#, ASP Framework & ADO.NET, MVC, WebForms, SQL Server, HTML, CSS, JavaScript, DevOps
                                                 </p>
                                             </div>
                                             <div class="content">
                                                 <p class="mb-0">
-                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Web Developer</span> <span>Comgem</span>
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">Student Internship - Web Developer</span> <span>Waters Creative</span>
                                                 </p>
                                                 <p>
-                                                    <span class="mr-25 has-text-weight-bold">Aug 2015 - May 2018</span> <span>Bridgend, South Wales</span>
-                                                </p>
-                                                <p class="mb-0"> 
-                                                    Developing or extending application features and incorporating bespoke designs into Comgems .NET Front-End E-Commerce platform (C#, WebForms, CSS, JS). 
-                                                </p>
-                                                <p>
-                                                    Other tasks involved automation of tasks, data migration and SEO.
+                                                    <span class="mr-25 has-text-weight-bold">May 2015</span> <span>Swansea, South Wales</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -232,7 +278,7 @@
                                         <div class="card-content quote">
                                             <div class="content">
                                                 <p class="mb-0">
-                                                    <span class="mr-25 is-size-5 has-text-weight-bold">BSc Web Development</span> <span class="is-size-6 has-text-weight-bold">2.1</span>
+                                                    <span class="mr-25 is-size-5 has-text-weight-bold">BSc Web Development</span> <span class="is-size-6 has-text-weight-bold">2:1 Honours</span>
                                                 </p>
                                                 <p class="mb-0">
                                                     <span class="mr-25 has-text-weight-bold">2012 - 2015</span> <span>Swansea, South Wales</span>
@@ -258,6 +304,7 @@
                                         <div class="card-content is-paddingless">
                                             <div class="content">
                                                 <ul class="is-marginless is-bulletless">
+                                                    <li><a href="mailto:adam@live.co.uk">adam@live.co.uk</a></li>
                                                     <li><a href="https://www.linkedin.com/in/adumuk" target="_blank">linkedin.com/in/adumuk</a></li>
                                                 </ul>
                                             </div>
@@ -268,20 +315,30 @@
                                     <div class="card">
                                         <header class="card-header">
                                             <p class="card-header-title pt-0">
-                                                Daily Tech Stack
+                                                Experienced With
                                             </p>
                                         </header>
                                         <div class="card-content is-paddingless">
                                             <div class="content">
                                                 <ul class="mt-0  has-text-weight-bold">
                                                     <li>C#</li>
-                                                    <li>ASP.NET Framework</li>
-                                                    <li>ASP.NET Web API</li>
-                                                    <li>Entity Framework</li>
-                                                    <li>SQL - MSSQL</li>
-                                                    <li>HTML</li>
+                                                    <li>MSSQL</li>
+                                                    <li>SQL Server</li>
+                                                    <li>ASP.NET Framework &amp; Core</li>
+                                                    <li>MVC</li>
+                                                    <li>WebForms</li>
+                                                    <li>ADO.NET</li>
+                                                    <li>Git, SVN</li>
+                                                    <li>Microsoft Azure</li>
+                                                    <li>Microsoft Azure DevOps</li>
+                                                    <li>Microsoft Dynamics 365</li>
+                                                    <li>Apache Solr</li>
+                                                    <li>Dapper</li>
+                                                    <li>WCF, SOAP, Restful Services</li>
                                                     <li>JavaScript</li>
-                                                    <li>CSS (Sass)</li>
+                                                    <li>CSS</li>
+                                                    <li>Selenium</li>
+                                                    <li>VB.NET</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -291,27 +348,20 @@
                                     <div class="card">
                                         <header class="card-header">
                                             <p class="card-header-title pt-0">
-                                                Experience With
+                                                Experience In
                                             </p>
                                         </header>
                                         <div class="card-content is-paddingless">
                                             <div class="content">
                                                 <ul class="mt-0  has-text-weight-bold">
-                                                    <li>Git</li>
-                                                    <li>Azure</li>
-                                                    <li>Azure DevOps</li>
-                                                    <li>Responsive/Adaptive Web Design</li>
-                                                    <li>Atlassian (Jira, Confluence)</li>
-                                                    <li>SVN</li>
-                                                    <li>WCF</li>
-                                                    <li>Selenium</li>
-                                                    <li>BrowserStack</li>
-                                                    <li>Apache Solr</li>
-                                                    <li>Bootstrap</li>
-                                                    <li>jQuery</li>
-                                                    <li>Adobe Creative Suite</li>
-                                                    <li>VB.NET</li>
-                                                    <li>MySQL</li>
+                                                    <li>Object-oriented programming (OOP)</li>
+                                                    <li>Inversion of Control (IoC)
+                                                        <ul>
+                                                            <li>Dependency Injection</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Information Security</li>
+                                                    <li>Responsive &amp; Adaptive Design</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -329,7 +379,7 @@
                 <div class="container">
                     <div class="section-heading">
                         <h3 class="title is-2">Showcase</h3>
-                        <h4 class="subtitle">Publicly accessible projects, private projects are available for discussion.</h4>
+                        <!--<h4 class="subtitle">A collection of commercial and personal<span class="is-size-7 speech-bubble"> I swear I'll start doing personal projects again 😇</span> projects</h4>-->
                     </div>
 
                     <hr class="mt-5"/>
@@ -339,37 +389,26 @@
                             <div class="card project">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span>PHS BeSafe</span>
+                                        <span>Pioneer Vets</span>
                                         <span class="tags">
                                             <span class="tag is-success">Commercial</span>
-                                            <span class="tag is-default">2019</span>
+                                            <span class="tag is-default">2020-2021</span>
                                         </span>
                                     </p>
                                 </header>
-                                <div class="card-image" style="background-image: url('images/projects/besafe.jpg')">
-                                </div>
-                                <div class="card-content stack">
-                                    <i class="devicon-csharp-plain"></i>
-                                    <i class="devicon-dot-net-plain-wordmark"></i>
-                                    <i class="devicon-sass-original colored"></i>
-                                </div>
-                                <footer class="card-footer">
-                                    <a href="https://www.phsbesafe.co.uk" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
-                            </div>
-                        </div>
-                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
-                            <div class="card project">
-                                <header class="card-header">
-                                    <p class="card-header-title">
-                                        <span>Beards Jewellers</span>
-                                        <span class="tags">
-                                            <span class="tag is-success">Commercial</span>
-                                            <span class="tag is-default">2019</span>
-                                        </span>
-                                    </p>
-                                </header>
-                                <div class="card-image" style="background-image: url('images/projects/beards.jpg')">
+                                <div class="card-image" style="background-image: url('images/projects/pioneervets.png'); background-size: 100%">
+                                    <div class="card-content more-info">
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    Daemon created to import ecommerce order data into Dynamics 365
+                                                </li>
+                                                <li>
+                                                    Infographic style design implementation
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content stack smaller">
                                     <i class="devicon-csharp-plain"></i>
@@ -378,58 +417,74 @@
                                     <i class="devicon-javascript-plain"></i>
                                     <i class="devicon-sass-original colored"></i>
                                 </div>
-                                <footer class="card-footer">
-                                    <a href="https://www.beards.co.uk" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
                             </div>
                         </div>
                         <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
                             <div class="card project">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span>PHS Wastekit</span>
+                                        <span>Rate Limiter</span>
                                         <span class="tags">
                                             <span class="tag is-success">Commercial</span>
-                                            <span class="tag is-default">2018</span>
+                                            <span class="tag is-default">2020</span>
                                         </span>
                                     </p>
                                 </header>
-                                <div class="card-image" style="background-image: url('images/projects/wastekit.jpg')">
+                                <div class="card-image" style="background-image: url('images/projects/ratelimit_c.png'); background-size: 100%">
+                                    <div class="card-content more-info">
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    Company platform inundated with requests from crawlers and automated scanners, this was created as a stopgap to filter out a large subset of requests
+                                                </li>
+                                                <li>OWIN Middleware used in the pipeline to process all requests into the platform</li>
+                                                <li>
+                                                    Token Bucket algorithm used, allows requests through but if a user fills their request bucket in a short peroid of time all future requests are dropped until a timeframe between requests eases
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content stack">
                                     <i class="devicon-csharp-plain"></i>
                                     <i class="devicon-dot-net-plain-wordmark"></i>
-                                    <i class="devicon-sass-original colored"></i>
                                 </div>
-                                <footer class="card-footer">
-                                    <a href="https://www.phswastekit.co.uk" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
                             </div>
-                        </div>
+                        </div> 
                         <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
                             <div class="card project">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span>Interfix</span>
+                                        <span>Beards Jewellers - Ring Builder</span>
                                         <span class="tags">
                                             <span class="tag is-success">Commercial</span>
-                                            <span class="tag is-default">2018</span>
+                                            <span class="tag is-default">2019</span>
                                         </span>
                                     </p>
                                 </header>
-                                <div class="card-image" style="background-image: url('images/projects/interfix.jpg')">
+                                <div class="card-image" style="background-image: url('images/projects/beards.png'); background-size: 100%">
+                                    <div class="card-content more-info">
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    An interactive ecommerce experience that allows users to customise a diamond ring based on various filters
+                                                </li>
+                                                <li>
+                                                    Data is provided on demand via Rapnet Diamond API
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-content stack">
+                                <div class="card-content stack smaller">
                                     <i class="devicon-csharp-plain"></i>
                                     <i class="devicon-dot-net-plain-wordmark"></i>
                                     <i class="fas fa-database"></i>
+                                    <i class="devicon-javascript-plain"></i>
                                     <i class="devicon-sass-original colored"></i>
                                 </div>
-                                <footer class="card-footer">
-                                    <a href="https://orderpad.interfix.co.uk/" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
                             </div>
-                        </div>
+                        </div> 
                         <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
                             <div class="card project">
                                 <header class="card-header">
@@ -442,26 +497,16 @@
                                     </p>
                                 </header>
                                 <div class="card-image" style="background-image: url('images/projects/legalcompliance.jpg');">
-                                    <div class="read-more">
-                                        <span class="text">More Information</span> <i class="fas fa-caret-down"></i>
-                                    </div>
-                                </div>
-                                <div class="card-content more-info hidden">
-                                    <div class="content">
-                                        <p>Redesign and technical overhaul of the Legal Compliance Manager website, owned by Wales Green Business.</p>
-
-                                        <p>Initial project created using ASP.NET Website with Web Forms, VB.Net, Bootstrap & CSS. No ability for the client to edit the contents of the site and the site was not mobile compatible.</p>
-                                            
-                                        <p>Completing the project involved:</p>
-                                            
-                                        <ul>
-                                            <li>Converting a large majority of the code base from VB.Net to C#</li>
-                                            <li>Incorporating ASP.NET's MVC to allow for dynamic pages controlled through an in-house Content Management System</li>
-                                            <li>Implementing client approved designs, partially moved legacy styling into Sass and built the new design logic on top as some aspects of the site remained the same e.g. admin controlled areas.</li>
-                                            <li>Business logic changed from single product purchase to multiple types of subscriptions, required migration of legacy clients to new subscription system along with tools to enable staff to manage/create subscriptions.</li>
-                                            <li>Stripe payment processor incorporated into the site and updates to existing PayPal IPN</li>
-                                            <li>Fully incorporating Bootstrap 3 to assist with making the site mobile compatible, along with custom responsive designs.</li>
-                                        </ul>
+                                    <div class="card-content more-info">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Converted a large majority of the code base from VB.Net to C#</li>
+                                                <li>Migrate from Web Forms to MVC</li>
+                                                <li>Implemented web design overhaul</li>
+                                                <li>Business logic changed from single product purchase to multiple types of subscriptions, required migration of legacy clients to new subscription system along with tools to enable staff to manage/create subscriptions.</li>
+                                                <li>Stripe payment processor implemented and PayPal IPN upgraded</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-content stack smaller">
@@ -471,34 +516,6 @@
                                     <i class="devicon-javascript-plain"></i>
                                     <i class="devicon-sass-original colored"></i>
                                 </div>
-                                <footer class="card-footer">
-                                    <a href="https://www.legalcompliancemanager.org" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
-                            </div>
-                        </div>
-                        <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
-                            <div class="card project">
-                                <header class="card-header">
-                                    <p class="card-header-title">
-                                        <span>Cardiff Embroidery</span>
-                                        <span class="tags">
-                                            <span class="tag is-success">Commercial</span>
-                                            <span class="tag is-default">2019</span>
-                                        </span>
-                                    </p>
-                                </header>
-                                <div class="card-image" style="background-image: url('images/projects/cardiffembroidery.jpg')">
-                                </div>
-                                <div class="card-content stack smaller">
-                                        <i class="devicon-csharp-plain"></i>
-                                        <i class="devicon-dot-net-plain-wordmark"></i>
-                                        <i class="fas fa-database"></i>
-                                        <i class="devicon-javascript-plain"></i>
-                                        <i class="devicon-sass-original colored"></i>
-                                    </div>
-                                <footer class="card-footer">
-                                    <a href="https://www.cardiffembroidery.co.uk/" target="_blank" class="card-footer-item">View Site</a>
-                                </footer>
                             </div>
                         </div>
                         <div class="column is-full is-half-tablet is-half-desktop is-one-third-widescreen">
@@ -508,30 +525,28 @@
                                         <span>Reddit User Flair Tracker</span>
                                         <span class="tags">
                                             <span class="tag is-info">Personal</span>
-                                            <span class="tag is-default">2018</span>
+                                            <span class="tag is-default">2019</span>
                                         </span>
                                     </p>
                                 </header>
                                 <div class="card-image" style="background-image: url('images/projects/flair-tracker.PNG')">
-                                    <div class="read-more">
-                                        <span class="text">More Information</span> <i class="fas fa-caret-down"></i>
+                                    <div class="card-content more-info">
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    A python bot that uses a reddit API wrapper called praw to scan new posts and comments within various communities, it matches on the users CSS "flair" tag and then stores the comment within a sqlite database.
+                                                </li>
+                                                <li>
+                                                    This project had an outreach of over 5000 users.
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-content more-info hidden">
-                                    <p>
-                                        A python bot that uses a reddit API wrapper called praw to scan new posts and comments within various communities, it matches on the users CSS "flair" tag and then stores the comment within a sqlite database.
-                                    </p>
-                                    <p>
-                                        This is currently being utilised within gaming communities to track developer comments for the games they play, one example being that when the bot finds a matched post/comment it will then notify users within a predefined channel in a Discord server.
-                                    </p>
-                                    <p>
-                                        This project currently has an outreach of over 5000 users.
-                                    </p>
                                 </div>
                                 <div class="card-content stack">
                                     <i class="devicon-python-plain-wordmark colored"></i>
-                                    <i class="fab fa-discord"></i>
-                                    <i class="fab fa-reddit"></i>
+                                    <svg class="svg-inline--fa fa-discord fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"></path></svg><!-- <i class="fab fa-discord"></i> -->
+                                    <svg class="svg-inline--fa fa-reddit fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="reddit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"></path></svg><!-- <i class="fab fa-reddit"></i> -->
                                 </div>
                             </div>
                         </div>
@@ -559,7 +574,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://konpa.github.io/devicon/" target="_blank">
+                        <a href="https://github.com/devicons/devicon" target="_blank">
                             <i class="devicon-devicon-plain-wordmark"></i>
                         </a>
                     </li>
@@ -572,6 +587,5 @@
         </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-  <script src="js/main.js?v=08072019"></script>
+  <script src="js/main.js?v=032021"></script>
 </html>
